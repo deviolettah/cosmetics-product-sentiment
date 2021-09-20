@@ -53,9 +53,9 @@ e. Tokenization (creating a vocabulary list based on collected reviews).
 
 ## 🧐 Preview <a name = "preview"></a>
 - Home Page : Introduction and how to use this app
-![Screenshot](Screenshot-app\home.png)
+![Screenshot](Screenshot-app/home.png)
 - Prediction Page : Upload csv file that consist of cosmetic products review and see the prediction result on screen also in output folder
-![Screenshot](Screenshot-app\prediction-page.png)
+![Screenshot](Screenshot-app/prediction-page.png)
 
 ## ✍️ Authors <a name = "authors"></a>
 
