@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block judul %}LAMAN PREDIKSI{% endblock %}
+
+{% block konten %}
+
+  <h2>LAMAN PREDIKSI</h2>
+  <h6>Silahkan input file data dalam bentuk .csv :</h6>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="dataset" placeholder="insert username"></br>
+    <input type="submit" class="btn btn-warning" value="Submit" style="margin-top: 2%;margin-bottom: 2%;">
+  </form>
+
+    <ul class="list-group list-group-horizontal-sm p-3">
+      <li class="list-group-item" style="width: 18rem;">POSITIF = {{pos}}</li>
+      <li class="list-group-item" style="width: 18rem;">NEGATIF = {{neg}}</li>
+      <li class="list-group-item" style="width: 18rem;">NETRAL  = {{net}}</li>
+    </ul>
+
+  <table class="table table-bordered" style="background-color: #1d1919; color:#cdcccc;">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 80%;">Data Ulasan Produk</th>
+        <th scope="col">Hasil Prediksi</th>
+      </tr>
+    </thead>
+    {% for dtTmpl, pred in dataTmpl_hslPred%}
+    <tbody>
+      <tr>
+        <td>{{dtTmpl}}</td>
+        <td>{{pred}}</td>
+      </tr>
+    </tbody>
+    {% endfor %}
+    </table>
+  <!-- {% for y in y_pred%}
+      <p>HASIL : {{y}}</p>
+  {% endfor %} -->
+  <!-- KALO UDAH SUBMIT
+  {% if content != Null %}
+      <p>HASIL : {{content}}</p>
+  {% endif %} -->
+
+{% endblock %}
+  

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block judul %}Beranda{% endblock %}
+
+{% block konten %}
+    <h2 class="mb-4">WELCOME TO APPREDICT</h2>
+    <p>Selamat datang di website Appredict. Appredict merupakan website yang digunakan untuk mempermudah perusahaan brand kosmetik Emina dalam menganalisis sentimen customernya selama menggunakan produk. Website ini dikembangkan dengan menggunakan 11000 data latih yang bersumber pada website Female Daily Review dengan Brand Emina serta algoritma yang digunakan adalah Algoritma 1D-Convolutional Neural Network. Model yang dibangun telah mencapai akurasi 80%.</p>
+    <p>Cara penggunaan aplikasi:</p>
+    <p>1. Silahkan masuk ke menu laman prediksi</p>
+    <p>2. Unggah file yang berisikan data dengan format file .csv</p>
+    <p>3. Klik "Submit", kemudian tunggu sampai muncul tabel hasil kelas klasifikasi sentimennya</p>
+    <p>4. Terdapat file hasil klasifikasi sentimen dalam bentuk .csv pada directory "Output"</p>
+{% endblock %}
+  
