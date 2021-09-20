@@ -17,6 +17,7 @@
 - [Usage](#usage)
 - [Deployment](#deployment)
 - [Built Using](#built_using)
+- [Preview](#preview)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -49,8 +50,13 @@ e. Tokenization (creating a vocabulary list based on collected reviews).
 - Flask - Micro Web Framework
 - Python - Programming Language
 
+
+## 🧐 Preview <a name = "preview"></a>
+- Home Page : Introduction and how to use this app
+![Screenshot](Screenshot-app\home.png)
+- Prediction Page : Upload csv file that consist of cosmetic products review and see the prediction result on screen also in output folder
+![Screenshot](Screenshot-app\prediction-page.png)
+
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@deviolettah](https://github.com/deviolettah)
-
-
